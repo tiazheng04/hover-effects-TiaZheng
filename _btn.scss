@@ -1,0 +1,13 @@
+@import "_variables.scss";
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  background-color: $colors;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border-radius: 10rem;
+}
