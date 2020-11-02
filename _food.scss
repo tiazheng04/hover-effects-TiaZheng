@@ -1,0 +1,48 @@
+@import "_variables.scss";
+
+.food-parent {
+  height: 40rem;
+  width: 60rem;
+  // background-color: red;
+}
+.food-gallery {
+  margin: 3rem;
+  position: relative;
+}
+.food {
+  position: absolute;
+  height: 20rem;
+  box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+.food:hover {
+  transform: scale(1.3);
+  box-shadow: 0 3rem 1 rem rgba(0, 0, 0, 0.4);
+  outline: 0.75rem double rgb(83, 65, 107);
+  z-index: 2;
+}
+.food-gallery:hover .food:not(:hover) {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.ramen {
+  width: 15rem;
+  height: auto;
+  top: 5rem;
+  transform: translate(-50%, 0%);
+}
+.ramen:hover {
+  transform: translate(-50%, 0%) scale(1.3);
+}
+.sushi {
+  width: 15rem;
+  top: 12rem;
+  right: 0;
+}
+.cake-latte {
+  width: 15rem;
+  height: auto;
+  top: -2rem;
+  left: 0;
+}

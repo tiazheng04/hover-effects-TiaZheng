@@ -1,0 +1,16 @@
+@import "_variables.scss";
+
+.puppy {
+  height: 15rem;
+  transition: all 0.3s;
+  border-radius: 40%;
+  margin: 2rem;
+}
+
+.puppy:hover {
+  border-radius: 20%;
+  border-style: double;
+  border-width: 0.3rem;
+  border-color: color(brown);
+  transform: scale(1.2) rotate(-30deg);
+}

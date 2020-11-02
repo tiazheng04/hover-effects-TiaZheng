@@ -61,8 +61,182 @@
   width: 50px;
 }
 
+.puppy {
+  height: 15rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 40%;
+  margin: 2rem;
+}
+
+.puppy:hover {
+  border-radius: 20%;
+  border-style: double;
+  border-width: 0.3rem;
+  border-color: #917171;
+  -webkit-transform: scale(1.2) rotate(-30deg);
+          transform: scale(1.2) rotate(-30deg);
+}
+
+/*.text-effect {
+  background-image: url(./media/space.jpg);
+  background-position: center;
+  color: transparent;
+  font-size: 5rem;
+  -webkit-background-clip: text;
+  transition: all 0.3s;
+}*/
+.text-effect {
+  background-image: url(./media/space.jpg);
+  background-position: center;
+  color: transparent;
+  font-size: 5rem;
+  -webkit-background-clip: text;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 2rem;
+}
+
+.text-effect:hover {
+  background-image: url(./media/space.jpg);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+  position: relative;
+  letter-spacing: 0.5rem;
+  -webkit-animation: text 3s 1;
+          animation: text 3s 1;
+}
+
+@-webkit-keyframes text {
+  30% {
+    letter-spacing: 2.5rem;
+    -webkit-transform: translate(0%, -20%);
+            transform: translate(0%, -20%);
+  }
+  85% {
+    letter-spacing: 0.5rem;
+    -webkit-transform: translate(0%, -40%);
+            transform: translate(0%, -40%);
+  }
+}
+
+@keyframes text {
+  30% {
+    letter-spacing: 2.5rem;
+    -webkit-transform: translate(0%, -20%);
+            transform: translate(0%, -20%);
+  }
+  85% {
+    letter-spacing: 0.5rem;
+    -webkit-transform: translate(0%, -40%);
+            transform: translate(0%, -40%);
+  }
+}
+
+.food-parent {
+  height: 40rem;
+  width: 60rem;
+}
+
+.food-gallery {
+  margin: 3rem;
+  position: relative;
+}
+
+.food {
+  position: absolute;
+  height: 20rem;
+  -webkit-box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.food:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-box-shadow: 0 3rem 1 rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3rem 1 rem rgba(0, 0, 0, 0.4);
+  outline: 0.75rem double #53416b;
+  z-index: 2;
+}
+
+.food-gallery:hover .food:not(:hover) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.ramen {
+  width: 15rem;
+  height: auto;
+  top: 5rem;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+.ramen:hover {
+  -webkit-transform: translate(-50%, 0%) scale(1.3);
+          transform: translate(-50%, 0%) scale(1.3);
+}
+
+.sushi {
+  width: 15rem;
+  top: 12rem;
+  right: 0;
+}
+
+.cake-latte {
+  width: 15rem;
+  height: auto;
+  top: -2rem;
+  left: 0;
+}
+
+.forest {
+  height: 30rem;
+  position: relative;
+}
+
+.forest-picture {
+  height: 30rem;
+  -webkit-clip-path: ellipse();
+          clip-path: ellipse();
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.forest-header {
+  font-size: 1rem;
+  opacity: 1;
+  color: #123512;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: underline;
+  text-transform: uppercase;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.forest:hover .forest-picture {
+  opacity: 0.7;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+.forest:hover .forest-header {
+  opacity: 1;
+  top: 50%;
+}
+
 .container {
-  width: 80vw;
+  width: 80vh;
   margin: 2rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
